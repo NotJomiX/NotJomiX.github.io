@@ -1,0 +1,70 @@
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="About JomiX – Roblox developer. About me page with playlist and personal details.">
+    <meta name="keywords" content="Roblox, Developer, Portfolio, About, JomiX">
+    <meta name="author" content="JomiX">
+
+    <meta property="og:title" content="About JomiX">
+    <meta property="og:description" content="Learn more about Roblox developer JomiX">
+    <meta property="og:image" content="Images/DevHammer.png">
+
+    <title>About Me - My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Images/DevHammer.png">
+</head>
+
+<body>
+
+<div class="frame-container">
+
+    <button class="menu-toggle">☰ Menu</button>
+
+    <div class="sidebar">
+        <div class="profile-container">
+            <img src="Images/Audi.png" class="my-img">
+            <h2 class="my-header">JomiX</h2>
+            <p class="my-position">> Roblox game developer</p>
+        </div>
+
+        <nav class="menu">
+            <a href="index.html" class="menu-item">Home</a>
+            <a href="about.html" class="menu-item active">About Me</a>
+            <a href="projects.html" class="menu-item">Projects</a>
+            <a href="contact.html" class="menu-item">Contact Me</a>
+        </nav>
+    </div>
+
+    <div class="content">
+        <h1>About Me</h1>
+        <p>
+            Hello! I am JomiX.<br>
+            I am an up and coming game developer on Roblox.<br>
+            I love cats, cars and developing games.<br>
+            I love working with and for people, and I learn quick!
+        </p>
+
+        <p>Here is my own playlist with songs I like to listen to:</p>
+
+        <iframe 
+            style="border-radius:12px"
+            src="https://open.spotify.com/embed/playlist/1nJgRcKMXcnJTekRmpnqv0?utm_source=generator&theme=0"
+            width="90%" 
+            height="352" 
+            frameborder="0"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy">
+        </iframe>
+    </div>
+</div>
+
+<script>
+document.querySelector(".menu-toggle").addEventListener("click", () => {
+    document.querySelector(".sidebar").classList.toggle("open");
+});
+</script>
+
+</body>
+</html>
